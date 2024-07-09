@@ -1,4 +1,5 @@
 import Maxwidthwrapper from "@/components/maxwidthwrapper";
+import { Check } from "lucide-react";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,7 +16,29 @@ export default function Home() {
             <p className="mt-9 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap">
               Experience our uniquely crafted and <span className="font-bold ">refreshingly original</span> creation, display your creativity and passion in a unique way
             </p>
-            <ul className="mt-10 space-y-1 text-left font-semibold flex flex-col items-center sm:items-start"></ul>
+            <ul className="mt-10 space-y-1 text-left font-semibold flex flex-col items-center sm:items-start">
+              <div className="space-y-1">
+                <li className="flex gap-1 items-center text-right">
+                  <Check className="h-5 w-5 shrink-0 text-purple-700"/>
+                  quality like german price like gikomba
+                </li>
+                <li className="flex gap-1 items-center text-right">
+                  <Check className="h-5 w-5 shrink-0 text-purple-700"/>
+                  Stand out from the crowd; Dont follow; most of them are just as lost.
+                </li>
+                <li className="flex gap-1 items-center text-right">
+                  <Check className="h-5 w-5 shrink-0 text-purple-700"/>
+                  be yourself; let your personality show
+                </li>
+              </div>
+            </ul>
+            <div className="mt-10 flex flex-col sm:flex-row items-center sm:items-start gap-4">
+              <div className="flex-space-x-3">
+                <img className="inline-block h-9 w-9 rounded-full ring-2 ring-slate-400 src=users/swaggy_user.jpg" 
+                alt="user image"
+                />
+              </div>
+            </div>
           </div>
           </div>
         </Maxwidthwrapper>
