@@ -68,7 +68,7 @@ export default function Home() {
             </div>
               <img src="the_image.jpg" className="absolute w-40 lg:w-52 left-56 -top-20 select-none hidden sm:block lg:hidden xl:block"/>
               <img src="/llient.png" className="absolute w-20 -left-6 -bottom-6 select-none"/>
-              <Phone />
+              <Phone className="w-64" />
             </div>
         </Maxwidthwrapper>
       </section>
