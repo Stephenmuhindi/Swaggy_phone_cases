@@ -26,7 +26,14 @@ const navbar = () => {
                         <ArrowRightSquareIcon className="ml-1.5 h-5 w-5"/>
                     </link>
                     </>
-                ): (<></>)}
+                ): (<>
+                    <link href="/api/auth/register" className={buttonVariants({ size:"sm", variant:"ghost"})}>
+                        sign up
+                    </link>
+                    <link href="/api/auth/login" className={buttonVariants({ size:"sm", variant:"ghost"})}>
+                        login
+                    </link>
+                    </>)}
             </div>
             </div>
         </Maxwidthwrapper>
