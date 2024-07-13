@@ -33,6 +33,11 @@ const navbar = () => {
                     <link href="/api/auth/login" className={buttonVariants({ size:"sm", variant:"ghost"})}>
                         login
                     </link>
+                    <div className="h-9 w-px bg-zinc-400 hidden sm:block"></div>
+                    <link href="/configure/upload" className={buttonVariants({ size:"sm", className: "hidden sm:flex items-center gap-1"})}>
+                        customize case
+                        <ArrowRightSquareIcon className="ml-1.5 h-5 w-5"/>
+                    </link>
                     </>)}
             </div>
             </div>
