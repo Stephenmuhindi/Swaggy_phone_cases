@@ -2,7 +2,7 @@ import { ArrowRightSquareIcon } from "lucide-react"
 import Maxwidthwrapper from "./maxwidthwrapper"
 import { buttonVariants } from "./ui/button"
 
-const navbar = () => {
+const Navbar = () => {
     const user = undefined
     const isAdmin = false
     return(
@@ -45,4 +45,4 @@ const navbar = () => {
     </nav>
     )
 }
-export default navbar
+export default Navbar
