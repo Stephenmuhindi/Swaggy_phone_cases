@@ -1,10 +1,13 @@
 import { ArrowRightSquareIcon } from "lucide-react"
 import Maxwidthwrapper from "./maxwidthwrapper"
 import { buttonVariants } from "./ui/button"
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server"
 
-const Navbar = () => {
-    const user = undefined
-    const isAdmin = false
+const Navbar = async () => {
+    const {getUser} = getKindeServerSession()
+    const user = await getUser()
+    
+    const isAdmin = user?.email === process.env.ADMIN_EMAIL
     return(
     <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-blue-500 bg-slate/75 backdrop-blur-lg transition-all">
         <Maxwidthwrapper>
